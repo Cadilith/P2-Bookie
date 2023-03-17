@@ -4,6 +4,15 @@
     margin: 0;
 }
 
+h1 {
+    font-weight: 700;  
+    font-size: 22px; 
+}
+
+p {
+    margin-top: 8px;
+}
+
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
@@ -88,7 +97,63 @@ nav a:hover {
   border-top: #0065FC solid 1px;
   cursor: pointer;
 }
+
+/****** formulaire de recherche ***********/
+
+form {
+    margin: 35px 0px 35px 0px ;
+    display: flex;
+    flex-direction: row;
+}
  
+.logo-localisation {
+    width: 50px;
+    height: 49px;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px 18px 15px 18px;
+}
+
+input[type=text] {
+    display: inline-block;
+    height: 49px;
+    width: 200px;
+    box-sizing: border-box;
+    padding: 14px 24px 14px 24px;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-top: #F2F2F2 solid 2px;
+    border-bottom: #F2F2F2 solid 2px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+  
+input::placeholder {
+    color: black;
+}
+
+input[type=submit] {
+    padding: 14px 16px auto;
+    width: 132px;
+    height: 49px;
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;  
+    font-weight: 700;
+    font-size: 18px;  
+    color: #FFFF ;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
