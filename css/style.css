@@ -146,9 +146,22 @@ input::placeholder {
     color: black;
 }
 
-input[type=submit] {
+.bouton-rechercher {
     padding: 14px 16px auto;
     width: 132px;
+    height: 49px;
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;  
+    font-weight: 700;
+    font-size: 18px;  
+    color: #FFFF ;
+    display: none;
+}
+
+.bouton-loupe {
+    padding: 14px 16px auto;
+    width: 49px;
     height: 49px;
     background: #0065FC;
     border: 1px solid #0065FC;
