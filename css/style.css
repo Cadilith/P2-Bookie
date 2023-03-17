@@ -9,6 +9,7 @@ h1 {
     font-size: 22px; 
 }
 
+
 p {
     margin-top: 8px;
 }
@@ -83,19 +84,21 @@ nav ul {
 nav li {
   display: inline-block; 
   margin-left: 20px;
-}
+ }
 
 nav a {
+    display: block;
     text-decoration: none; 
     font-size: 16px;
     text-align: center;
+    padding-top: 16px;
     border: white solid 1px; /*stops from moving on hover*/
-
 }
 
 nav a:hover {
   border-top: #0065FC solid 1px;
-  cursor: pointer;
+  cursor: default;
+  color: #0065FC;
 }
 
 /****** formulaire de recherche ***********/
@@ -154,6 +157,8 @@ input[type=submit] {
     font-size: 18px;  
     color: #FFFF ;
 }
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
