@@ -80,7 +80,7 @@ nav a {
     text-decoration: none; 
     font-size: 16px;
     text-align: center;
-    border-top: white solid 1px;
+    border-top: white solid 1px; /*stops from moving on hover*/
 
 }
 
