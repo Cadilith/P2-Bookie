@@ -17,16 +17,45 @@
 <body>
     <div class="main-container">
         <header>
-            <img src="./images/logo/Booki.png" alt = "Logo Booki" width="61" height="auto">
+            <a href="index.html" title="www.booki.com"><!-- a modifier une fois url connue -->
+                <img src="./images/logo/Booki.png" alt = "Agence de voyage" width="61" height="auto">
+            </a>    
             <nav>
                 <ul>
-                    <li><a id="hebergements-and-populaires">Hebergements</a></li>
-                    <li><a id="activites">Activités</a></li>
+                    <li><a href="#hebergements-and-populaires">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div class="hebergements-and-populaires">
+            <section class="recherche">
+                <div class="titre">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h2>En plein centre-ville ou en pleine nature</h2>
+                </div>
+                <form method="get" action="">
+                    <button class="logo-localisation"><i class="fa-sharp fa-solid fa-location-dot fa-xl"></i></button>
+                    <input type="text" name="ville" placeholder="Marseille, France">
+                    <button type="submit" class="bouton-rechercher">Rechercher</button>
+                    <button type="submit" class="bouton-loupe"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </section>
+            <section class="section-filtres">
+                <div class="filtres">
+                    <h4>Filtres</h4>
+                    <div class="container-boutons-filtre">
+                        <button class="bouton-filtre"><i class="fa-sharp fa-solid fa-money-bill-wave fa-lg fa-fw"></i>&nbsp;&nbsp;Économique</button>
+                        <button class="bouton-filtre"><i class="fa-sharp fa-solid fa-person fa-lg fa-fw"></i>&nbsp;Familial</button>
+                        <button class="bouton-filtre"><i class="fa-sharp fa-solid fa-heart fa-lg fa-fw"></i>&nbsp;&nbsp;Romantique</button>
+                        <button class="bouton-filtre"><i class="fa-sharp fa-solid fa-fire fa-lg fa-fw"></i>&nbsp;&nbsp;Nos pépites</button>
+                    </div>
+                </div>
+                <div class="infobar">
+                    <div class="info-logo"><i class="fa-solid fa-info fa-2xs"></i></div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+            <div class="hebergements-and-populaires" id="hebergements-and-populaires">
                 <section class="hebergements">
 
                 </section>
