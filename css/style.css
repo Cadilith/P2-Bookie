@@ -6,12 +6,19 @@
 
 h1 {
     font-weight: 700;  
-    font-size: 22px; 
+    font-size: 1.375em; 
 }
 
 
-p {
+h2 {
     margin-top: 8px;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+h4 {
+    display: inline-block;
+    font-size: 1.125em;
 }
 
 :root {
@@ -38,7 +45,7 @@ body {
 
 .section-title {
     margin: 0;
-    font-size: 22px;
+    font-size: 1.375em;
 }
 
 .card {
@@ -53,15 +60,19 @@ body {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .euro {
     font-weight: 700;
 }
 
-.neutralStar {
+.neutral-star {
     color: var(--main-bg-color)
+}
+
+a {
+    color: inherit;
 }
 
 /****** Header ******/
@@ -83,28 +94,28 @@ nav ul {
 
 nav li {
   display: inline-block; 
-  margin-left: 20px;
+  margin-left: 70px;
  }
 
 nav a {
     display: block;
     text-decoration: none; 
-    font-size: 16px;
     text-align: center;
     padding-top: 16px;
-    border: white solid 1px; /*stops from moving on hover*/
+    border-top: white solid 2px;
+    border-bottom: #FFFFFF solid 2px;
 }
 
 nav a:hover {
-  border-top: #0065FC solid 1px;
-  cursor: default;
+  border-top: #0065FC solid 2px;
+  cursor: pointer;
   color: #0065FC;
 }
 
 /****** formulaire de recherche ***********/
 
 form {
-    margin: 35px 0px 35px 0px ;
+    margin: 30px 0px 30px 0px ;
     display: flex;
     flex-direction: row;
 }
@@ -113,10 +124,9 @@ form {
     width: 50px;
     height: 49px;
     background: #F2F2F2;
-    border: 1px solid #F2F2F2;
+    border: none;
     border-radius: 15px 0px 0px 15px;
     text-align: center;
-    box-sizing: border-box;
     padding: 15px 18px 15px 18px;
 }
 
@@ -127,22 +137,22 @@ input[type=text] {
     box-sizing: border-box;
     padding: 14px 24px 14px 24px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125em;
     text-align: center;
     border: none;
     border-top: #F2F2F2 solid 2px;
     border-bottom: #F2F2F2 solid 2px;
 }
 
-input:focus {
+input[type=text]:focus {
     outline: none;
 }
 
-input:focus::placeholder {
+input[type=text]:focus::placeholder {
     color: transparent;
   }
   
-input::placeholder {
+input[type=text]::placeholder {
     color: black;
 }
 
@@ -151,12 +161,11 @@ input::placeholder {
     width: 132px;
     height: 49px;
     background: #0065FC;
-    border: 1px solid #0065FC;
+    border: none;
     border-radius: 0px 15px 15px 0px;  
     font-weight: 700;
-    font-size: 18px;  
-    color: #FFFF ;
-    display: none;
+    font-size: 1.125em;  
+    color: #FFFFFF ;
 }
 
 .bouton-loupe {
@@ -164,14 +173,75 @@ input::placeholder {
     width: 49px;
     height: 49px;
     background: #0065FC;
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;  
+    border: none;
+    border-radius: 15px;  
     font-weight: 700;
-    font-size: 18px;  
-    color: #FFFF ;
+    color: #FFFFFF ;
+    margin-left: -10px;
+    display: none;
 }
 
+.fa-location-dot {
+    color: black;
+}
 
+.fa-magnifying-glass {
+    color: #FFFFFF;
+}
+
+button:hover {
+cursor: pointer;
+}
+
+/****** filtres ***********/
+.filtres {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.container-boutons-filtre {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 4px 19px;
+    gap: 10px;
+}
+
+.bouton-filtre {
+    width: auto;
+    height: 50px;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    margin: 5px 5px ;
+    padding: 13px 19px 17px 15px;
+    background-color: #FFFFFF;
+    font-size: 1.0625em;
+    font-weight: 700;
+    text-justify: center;
+    transition: background-color 0.5s;
+}
+
+.bouton-filtre:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.infobar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 35px;
+    margin-top: 30px;
+}
+.info-logo {
+    box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 25px;
+    text-align: center;
+    margin-right: 10px;
+    padding-top: 1px;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -268,11 +338,11 @@ input::placeholder {
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 0.875em;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 0.8125em;
     }
 }
 
