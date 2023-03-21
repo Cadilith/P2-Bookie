@@ -4,25 +4,23 @@
     margin: 0;
 }
 
-p {
+p, h2 {
     margin-top: 8px;
 }
 
-h1 {
-    font-weight: 700;  
-    font-size: 1.375em; 
-}
-
-
-h2 {
-    margin-top: 8px;
+h2, h1 {
     font-weight: 700;
     font-size: 1.375em;
 }
 
 h3 {
     font-weight: 700;
-    font-size: 1em;
+}
+
+h5 {
+    display: inline-block;
+    font-size: 1.125em;
+    font-weight: 700;
 }
 
 :root {
@@ -71,7 +69,7 @@ body {
 }
 
 .card-content {
-    padding: 4px 15px 4px 15px;
+    padding: 4px 10px 4px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -112,8 +110,7 @@ nav ul, footer ul {
 nav li {
   display: inline-block; 
   margin-right: 69px;
-
- }
+}
 
 nav a {
     display: block;
@@ -235,12 +232,6 @@ cursor: pointer;
     transition: background-color 0.5s;
 }
 
-.filtres p, .afficher-plus {
-    display: inline-block;
-    font-size: 1.125em;
-    font-weight: 700;
-}
-
 .bouton-filtre:hover {
     background-color: var(--filter-bg-color);
 }
@@ -281,14 +272,6 @@ cursor: pointer;
     width: 65%;
 }
 
-.hebergement-cards .card-subtitle {
-    margin: 0;
-}
-
-.hebergement-cards .card-title {
-    margin-bottom: 8px;
-}
-
 .hebergement-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -310,7 +293,7 @@ cursor: pointer;
 }
 
 .hebergement-cards .card-rating {
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 /****** Populaires ***********/
@@ -331,7 +314,6 @@ cursor: pointer;
 
 .populaires-cards img {
     width: 33%;
-    height: 134px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -359,10 +341,12 @@ cursor: pointer;
     box-sizing: border-box;
     margin-top: 30px;
     margin-bottom: 65px;
+    width: 100%;
 }
 
 .activites .card {
     padding: 0px;
+    height: 100%;
 }
 
 .activites-cards {
@@ -372,12 +356,13 @@ cursor: pointer;
     gap: 30px;
     box-sizing: border-box;
     margin-top: 30px;
+    width: 100%;
     
 }
 
 .activites-cards img {
     height: 380px;
-    width: 297px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -393,6 +378,9 @@ footer {
     justify-content: space-between;
     padding: 20px;
     background-color: var(--main-bg-color);
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
 }
 
 footer ul {
