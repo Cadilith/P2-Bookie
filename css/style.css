@@ -77,6 +77,10 @@ body {
     box-sizing: border-box;
 }
 
+.lien-carte {
+    display: block;
+}
+
 
 .neutral-star {
     color: var(--main-bg-color)
@@ -259,15 +263,25 @@ cursor: pointer;
     box-sizing: border-box;
 }
 
+.hebergements-and-populaires a {
+    display: block;
+}
+
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
 }
 
+.hebergement-cards .lien-carte {
+    box-sizing: border-box;
+    flex: 1 29%;
+    margin-bottom: 10px;
+}
+
 .hebergement-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     gap: 30px;
     margin-top: 35px;
     margin-bottom: 30px;
@@ -343,7 +357,7 @@ cursor: pointer;
 }
 
 .activites-cards {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 1fr;
     gap: 30px;
