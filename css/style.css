@@ -307,6 +307,10 @@ cursor: pointer;
     width: 32%;
 }
 
+.populaires-cards .lien-carte {
+    box-sizing: border-box;
+}
+
 .populaires-title {
     display: flex;
     justify-content: space-between;
@@ -435,10 +439,11 @@ footer a:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 30px;
     }
 
-    .populaires-cards .card {
-        width: 30%;
+    .populaires-cards .lien-carte {
+        flex: 1 30%;
     }
 
     .populaires-cards .card-title {
