@@ -13,8 +13,9 @@ h2, h1 {
     font-size: 1.375em;
 }
 
-h3 {
+h3, .euro {
     font-weight: 700;
+    font-size: 1em;
 }
 
 h5 {
@@ -76,9 +77,6 @@ body {
     box-sizing: border-box;
 }
 
-.euro {
-    font-weight: 700;
-}
 
 .neutral-star {
     color: var(--main-bg-color)
@@ -103,7 +101,7 @@ header img {
     width:3.8125em;
 }
 
-nav ul, footer ul {
+ul {
     list-style: none;
 }
 
@@ -169,27 +167,26 @@ input[type=text]::placeholder {
     color: black;
 }
 
-.bouton-rechercher {
+.bouton-rechercher, .bouton-loupe {
     padding: 14px 16px;
     height: 49px;
     background: var(--main-color);
     border: none;
-    border-radius: 0px 15px 15px 0px;  
     font-weight: 700;
-    font-size: 1.125em;  
     color: #FFFFFF ;
+    font-size: 1.125em; 
+}
+
+.bouton-rechercher {
+    border-radius: 0px 15px 15px 0px;  
+    font-size: 1.125em;   
 }
 
 .bouton-loupe {
-    padding: 14px 16px;
-    height: 49px;
-    background: var(--main-color);
-    border: none;
     border-radius: 15px;  
-    font-weight: 700;
-    color: #FFFFFF ;
     margin-left: -10px;
     display: none;
+
 }
 
 .fa-location-dot {
@@ -205,15 +202,12 @@ cursor: pointer;
 }
 
 /****** filtres ***********/
-.filtres {
+.filtres, .container-boutons-filtre, .infobar {
     display: flex;
     flex-direction: row;
     align-items: baseline;
 }
 .container-boutons-filtre {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
     padding: 4px 19px;
     gap: 10px;
 }
@@ -237,12 +231,10 @@ cursor: pointer;
 }
 
 .infobar {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
     margin-bottom: 35px;
     margin-top: 30px;
 }
+
 .info-logo {
     box-sizing: border-box;
     width: 24px;
@@ -314,6 +306,7 @@ cursor: pointer;
 
 .populaires-cards img {
     width: 33%;
+    height: 146px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
