@@ -22,6 +22,7 @@ h5 {
     display: inline-block;
     font-size: 1.125em;
     font-weight: 700;
+    margin-right: 10px;
 }
 
 :root {
@@ -75,6 +76,10 @@ body {
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+.card-subtitle {
+    font-size: 0.875em;
 }
 
 .lien-carte {
@@ -212,22 +217,20 @@ cursor: pointer;
     align-items: baseline;
 }
 .container-boutons-filtre {
-    padding: 4px 19px;
     gap: 10px;
 }
 
 .bouton-filtre {
-    width: auto;
-    height: 50px;
     border: 2px solid #d9d9d9;
     border-radius: 25px;
-    margin: 5px 5px ;
-    padding: 13px 19px 17px 15px;
+    margin-top: 20px;
+    padding: 14px 18px;
     background-color: #FFFFFF;
     font-size: 1.0625em;
     font-weight: 700;
     text-align: center;
     transition: background-color 0.5s;
+    height: 50px;
 }
 
 .bouton-filtre:hover {
@@ -446,14 +449,21 @@ footer a:hover {
         flex: 1 30%;
     }
 
-    .populaires-cards .card-title {
-        font-size: 0.875em;
+    .filtres {
+        flex-direction: column;
     }
 
-    .populaires-cards .card-subtitle {
-        font-size: 0.8125em;
+    .container-boutons-filtre {
+        flex-wrap: wrap;
     }
+
+    .activites-cards img {
+        height: 200px;
+    }
+
 }
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
