@@ -356,10 +356,12 @@ cursor: pointer;
     height: 100%;
 }
 
+.activites-cards .lien-carte {
+    flex: 1 25%;
+}
+
 .activites-cards {
     display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 1fr;
     gap: 30px;
     box-sizing: border-box;
     margin-top: 30px;
