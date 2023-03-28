@@ -419,11 +419,8 @@ footer ul {
     padding-left: 0px;
 }
 
-footer ul[title]::before {
-    content: attr(title);
-    display: block;
-    font-weight: 700;
-    font-size: 1.125em;
+footer h5 {
+    margin: 0;
 }
 
 footer li {
