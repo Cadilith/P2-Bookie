@@ -478,6 +478,11 @@ footer a:hover {
         max-height: 200px;
     }
 
+    .activites-cards .card-title {
+        font-size: clamp(0.875rem, 0.5rem + 0.7813vw, 1rem);
+        padding: 10%;
+    }
+
 }
 
 
@@ -549,7 +554,7 @@ footer a:hover {
         width: 48%;
         text-align: left;
         padding: 2% 4%;
-        font-size: clamp(0.8em, calc(0.8rem + ((1vw - 0.2em) * 1.8)), 1em);
+        font-size: clamp(0.8125rem, 0.6786rem + 0.6696vw, 1rem);
     }
 
     .container-boutons-filtre {
@@ -608,6 +613,11 @@ footer a:hover {
 
     .activites-cards img {
         height: 141px;
+    }
+
+    .activites-cards .card-title {
+        font-size: clamp(0.9375rem, 0.8929rem + 0.2232vw, 1rem);
+        padding: 20px;
     }
 
     footer {
