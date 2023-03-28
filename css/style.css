@@ -456,10 +456,6 @@ footer a:hover {
         gap: 30px;
     }
 
-    .populaires-cards .card-rating {
-        font-size: 0,875em;
-    }
-
     .populaires-cards .lien-carte {
         flex: 30%;
     }
