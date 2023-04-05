@@ -131,7 +131,7 @@ nav a {
     border-top: white solid 2px;
 }
 
-nav a:hover {
+nav a:hover, nav a:active {
   border-top: var(--main-color) solid 2px;
   cursor: pointer;
   color: var(--main-color);
@@ -249,7 +249,7 @@ cursor: pointer;
     margin-right: 10px;
 }
 
-.bouton-filtre:hover, .bouton-filtre:active {
+.bouton-filtre:hover, .bouton-filtre:focus {
     background-color: var(--filter-bg-color);
 }
 
